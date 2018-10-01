@@ -59,10 +59,10 @@ def all_supplies_in_holidays(holiday_hash)
       
       newHolildays = holidays.map {|i| i.capitalize}
       
-      newHolidays = newHolidays.join(" ")
+      newHolidays2 = newHolidays.join(" ")
       newSupplies = supplies.join(", ")
       puts "#{newSeason}:" 
-      puts "  #{newHolidays}: #{newSupplies}"
+      puts "  #{newHolidays2}: #{newSupplies}"
     end
   end
   
