@@ -51,20 +51,20 @@ end
 
 def all_supplies_in_holidays(holiday_hash)
   
-  # holiday_hash.collect do |season, value|
-  #   newSeason = season.to_s.capitalize
+  holiday_hash.collect do |season, value|
+    newSeason = season.to_s.capitalize
     
-  #   value.collect do |holiday, supplies|
-  #     holidays = holiday.to_s.split("_")
+    value.collect do |holiday, supplies|
+      holidays = holiday.to_s.split("_")
       
-  #     holidays.map {|i| i.capitalize}
+      holidays.map {|i| i.capitalize}
       
-  #     newHolidays = holidays.join(" ")
-  #     newSupplies = supplies.join(", ")
-  #     puts "#{newSeason}:" 
-  #     puts "  #{newHolidays}: #{newSupplies}"
-  #   end
-  # end
+      newHolidays = holidays.join(" ")
+      newSupplies = supplies.join(", ")
+      puts "#{newSeason}:" 
+      puts "  #{newHolidays}: #{newSupplies}"
+    end
+  end
   
   # holiday_hash.each do |season, holiday|
   #   puts "#{season.capitalize}:"
