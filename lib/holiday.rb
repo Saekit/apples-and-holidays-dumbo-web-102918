@@ -53,11 +53,14 @@ def all_supplies_in_holidays(holiday_hash)
   
   holiday_hash.collect do |season, value|
     newSeason = season.to_s.capitalize
+    
     value.collect do |holiday, supplies|
       holidays = holiday.to_s.split("_")
+      
       holidays.collect do |day|
         day.capitalize!
       end
+      
       newHolidays = holidays.join(" ")
       newSupplies = supplies.flatten.join(", ")
       puts "#{newSeason}:" 
